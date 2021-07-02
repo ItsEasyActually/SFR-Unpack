@@ -203,7 +203,7 @@ namespace RidersUnpack
 			Console.WriteLine("Filename found: {0}", fileName);
 
 			// Set full filesize from NEIF Chunk to end of NEND Chunk.
-			int fileSize = (nfn0Loc + NFN0Size + 16) - addr;
+			int fileSize = (nfn0Loc + NFN0Size + 32) - addr;
 			Console.WriteLine("Filesize: {0}", fileSize.ToString("X"));
 
 			// Copy bytes to a byte array.
